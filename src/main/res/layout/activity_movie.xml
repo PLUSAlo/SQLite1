@@ -1,0 +1,65 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/activity_movie"
+    tools:context=".MovieActivity">
+
+    <EditText
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:id="@+id/name_movie"
+        android:inputType="textPersonName"
+        android:hint="Name Movie"
+        />
+    <EditText
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:inputType="textPersonName"
+        android:hint="Director"
+        android:layout_below="@+id/name_movie"
+        android:id="@+id/director_movie"/>
+    <EditText
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:inputType="textPersonName"
+        android:hint="Clasification"
+        android:layout_below="@+id/director_movie"
+        android:id="@+id/clasification_movie"/>
+
+    <EditText
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:inputType="number"
+        android:hint="Year"
+        android:layout_below="@+id/clasification_movie"
+        android:id="@+id/year_movie"/>
+
+
+    <EditText
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:inputType="number"
+        android:hint="Duration"
+        android:id="@+id/duration_movie"
+        android:layout_below="@+id/year_movie"/>
+
+
+    <Button
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="@string/save"
+        android:layout_below="@+id/duration_movie"
+        android:id="@+id/bt_save_movie"/>
+
+    <android.support.v7.widget.RecyclerView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_below="@+id/bt_save_movie"
+        android:id="@+id/rv_movie_list">
+
+    </android.support.v7.widget.RecyclerView>
+
+
+</RelativeLayout>
